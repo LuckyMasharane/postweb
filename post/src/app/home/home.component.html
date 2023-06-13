@@ -5,10 +5,27 @@
     </head>
     <body>
         <div class="container">
+            
             <div *ngFor="let logo of logo">
                 <img src={{logo.logo}} alt="forest" height="500px" width="1200px">
-
+                
             </div>
+            <div class="container text-center" style="padding-top: 3%;" >
+                <div class="row">
+                  <div class="col" *ngFor="let service of service">
+                    <div class="card" style="width: 18rem;">
+                        <img src={{service.serv}} class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+                  
+                  
+                </div>
+              </div>
            
           </div>
     </body>
